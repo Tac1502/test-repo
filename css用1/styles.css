@@ -1,0 +1,63 @@
+/* ---- 色（画像の雰囲気に合わせた配色） ---- */
+:root{
+  --bg:#e9e5f6;          /* ページの薄い紫 */
+  --head:#7886be;        /* 最上部のブルー帯 */
+  --bar:#d7aa23;         /* セクション見出しの黄土色 */
+  --soft-yellow:#fbf3cf; /* 好きなことの淡い黄色 */
+  --link-green:#6ec57a;  /* お問い合わせメールの緑 */
+  --text:#222;
+}
+
+/* ---- ベース ---- */
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,
+    "Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
+  line-height:1.8;
+}
+.wrap{max-width:960px;margin:0 auto}
+
+/* ---- 見出し帯 ---- */
+.page-title{
+  background:var(--head);
+  color:#fff;
+  font-size:1.6rem;
+  font-weight:700;
+  padding:.6rem .9rem;
+  letter-spacing:.03em;
+}
+.sec-title{
+  background:var(--bar);
+  color:#222;
+  font-weight:700;
+  padding:.45rem .9rem;
+  margin-top:1.1rem;
+  letter-spacing:.02em;
+}
+
+/* ---- コンテンツ ---- */
+.sec-body{padding:.7rem .9rem}
+.soft{background:var(--soft-yellow)}
+ul{margin:.2rem 0 .2rem 1.4rem}
+
+/* ---- 画像レイアウト ---- */
+.profile-area{padding:1.2rem .9rem}
+.profile-img{
+  width:280px;
+  height:auto;
+  display:block;
+  margin:0 0 1rem .6rem; /* 左寄せ気味 */
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.08));
+  background:#fff;       /* 透過PNGでも見やすい */
+  border-radius:4px;
+}
+
+/* ---- お問い合わせ ---- */
+.contact a{
+  color:var(--link-green);
+  text-decoration:none;
+}
+.contact a:hover{ text-decoration:underline }

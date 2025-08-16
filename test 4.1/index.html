@@ -6,8 +6,59 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>こんばんわ</h1>
-    <h2>リモートプッシュブランチ</h2>
-    <h3>git reqest</h3>
+    <h1>お問合せ</h1>
+        <nav>
+            <ui>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">会社概要</a></li>
+                <li><a href="index.html">問い合わせ</a></li>
+            </ui>
+        </nav>
+    <h2>お問い合わせフォーム</h2>
+        <p>ご質問・ご意見がございましたら、以下のフォームにご記入の上、送信してください。</p>
+    <h3>お客様情報</h3>
+        <form action="#" method="post" novalidate>
+             <div class="row">
+                <label for="name">お名前</label>
+                <input id="name" name="name" type="text" placeholder="例：山田太郎" />
+            </div>
+
+            <div class="row">
+                <label for="email">メールアドレス</label>
+                <input id="email" name="email" type="email" placeholder="例：example@example.com" />
+            </div>
+            <div class="row">
+                <label for="tel">電話番号</label>
+                <input id="tel" name="tel" type="tel" inputmode="tel" placeholder="例：090-1234-5678" />
+            </div>
+
+    <h3>お問い合わせ内容</h3>
+
+    <div class="row">
+      <label for="topic">お問い合わせの種類</label>
+      <select id="topic" name="topic">
+        <option value="">選択してください</option>
+        <option value="product">製品について</option>
+        <option value="price">料金について</option>
+        <option value="support">サポートについて</option>
+        <option value="other">その他</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label for="message">内容</label>
+      <textarea id="message" name="message" placeholder="こちらにご記入ください"></textarea>
+    </div>
+
+    <h3>個人情報の取り扱い</h3>
+    <div class="row agree">
+      <input id="agree" name="agree" type="checkbox" />
+      <label for="agree">個人情報の取り扱いに同意する</label>
+    </div>
+
+    <div class="actions">
+      <button type="submit">送信</button>
+    </div>
+        </form>
 </body>
 </html>
